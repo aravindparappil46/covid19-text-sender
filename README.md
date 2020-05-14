@@ -6,6 +6,7 @@ Uses https://covid19-us-api.herokuapp.com/county API to get the data. Find their
 # Requirements
 - Python 3.x+
 - Gmail account
+- Enable Less Secure Apps access for that Gmail account. Go (here)[https://myaccount.google.com/lesssecureapps] while logged in to that Gmail account
 - Receiver phone number in the US (network should be one among AT&T, T-Mobile, Verizon, Sprint or Cricket (or their MVNOs))
 
 # How-to
