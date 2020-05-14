@@ -21,4 +21,4 @@ Uses https://covid19-us-api.herokuapp.com/county API to get the data. Find their
 
 <br>
 
-*Again, keeping the Gmail account credentials and the phone numbers safe and secure is your responsibility. This script was just for educational purposes.*
+*Again, keeping the Gmail account credentials and the phone numbers safe and secure is your responsibility. This script was just for educational purposes. I claim no responsibility over the same.*
