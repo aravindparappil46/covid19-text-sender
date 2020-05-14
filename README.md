@@ -11,7 +11,7 @@ Uses https://covid19-us-api.herokuapp.com/county API to get the data. Find their
 
 # How-to
 - Fill the details in ```msg_info.json```
-	-```state```: Enter two-letter code for US state
+	- ```state```: Enter two-letter code for US state
 	- ```sendTo```: Which phone number do you want to send the SMS to?
 	- ```network```: What is that number's network provider? Enter one of the following: ```ATT, TMobile, Verizon, Sprint or Cricket``` (Enter exactly as given. Case sensitive)
 	- You can keep as many entries as you want; the value of X in key ```msgX``` does not matter as long as it is unique
