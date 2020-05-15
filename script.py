@@ -9,7 +9,8 @@ carrier_gateways = {
 	"TMobile": "@tmomail.net",
 	"Verizon": "@vtext.com",
 	"Sprint": "@messaging.sprintpcs.com",
-	"Cricket" : "@mms.cricketwireless.net"
+	"Cricket" : "@mms.cricketwireless.net",
+	"Vodafone": "@vodafone-sms.de"
 }
 
 # Connecting to GMail SMTP Server
@@ -39,7 +40,7 @@ with open("msg_info.json", "r") as input_file:
 		new_death = str(m['new_death'])
 
 		# Forming SMS body
-		body = "-------------\nConfirmed: "+confirmed+"\nDeaths: "+deaths+"\nNew Cases: "+new + "\nNew Deaths: "+ new_death+"\n----------------"
+		body = "-\nTotal Cases: "+confirmed+"\nTotal Deaths: "+deaths+"\nNew Cases: "+new + "\nNew Deaths: "+ new_death+"\n-------"
 
 		msg = MIMEMultipart()
 		msg['Subject'] = "COVID-19 at "+county+" County, "+state
@@ -47,6 +48,7 @@ with open("msg_info.json", "r") as input_file:
 		sms = msg.as_string()
 
 		to = to_number + carrier_gateways[cell_network]
+		print("Sent to", to)
 		server.sendmail(gmail_address, to, sms)
 
 server.close()
